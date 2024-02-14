@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Basics.GoogleSearchTest">
+      <class name="testNgListeners.ListenDemo">
         <methods>
-          <include name="testGoogle"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="after"/>
+          <include name="second"/>
+          <include name="first"/>
+          <include name="SkipTest"/>
         </methods>
-      </class> <!-- Basics.GoogleSearchTest -->
+      </class> <!-- testNgListeners.ListenDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

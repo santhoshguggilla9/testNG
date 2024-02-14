@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T09:52:08 IST" name="Default suite" finished-at="2024-02-13T09:52:23 IST" duration-ms="15250">
+  <suite started-at="2024-02-14T09:49:12 IST" name="Suite" finished-at="2024-02-14T09:49:13 IST" duration-ms="169">
     <groups>
     </groups>
-    <test started-at="2024-02-13T09:52:08 IST" name="Default test" finished-at="2024-02-13T09:52:23 IST" duration-ms="15250">
-      <class name="Basics.GoogleSearchTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:08 IST" name="setup" finished-at="2024-02-13T09:52:11 IST" duration-ms="3658" status="PASS">
+    <test started-at="2024-02-14T09:49:12 IST" name="Test" finished-at="2024-02-14T09:49:13 IST" duration-ms="169">
+      <class name="testNgParams.Sum">
+        <test-method signature="mul(int,int)[pri:0, instance:testNgParams.Sum@7f3b84b8]" started-at="2024-02-14T09:49:13 IST" name="mul" finished-at="2024-02-14T09:49:13 IST" duration-ms="36" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="openUrl()[pri:1, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:11 IST" name="openUrl" finished-at="2024-02-13T09:52:13 IST" duration-ms="1752" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:13 IST" name="teardown" finished-at="2024-02-13T09:52:13 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:13 IST" name="setup" finished-at="2024-02-13T09:52:16 IST" duration-ms="2625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testGoogle()[pri:2, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:16 IST" name="testGoogle" finished-at="2024-02-13T09:52:23 IST" duration-ms="6677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGoogle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Basics.GoogleSearchTest@9597028]" started-at="2024-02-13T09:52:23 IST" name="teardown" finished-at="2024-02-13T09:52:23 IST" duration-ms="215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Basics.GoogleSearchTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- mul -->
+      </class> <!-- testNgParams.Sum -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
