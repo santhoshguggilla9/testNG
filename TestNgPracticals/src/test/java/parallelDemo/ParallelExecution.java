@@ -14,7 +14,7 @@ public class ParallelExecution {
 	@Test
 	public void openGoogle()
 	{
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com");
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));

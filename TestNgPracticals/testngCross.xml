@@ -9,7 +9,6 @@
     </classes>
   </test> <!-- Test -->
   
-  
   <test thread-count="5" name="chromeTest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
@@ -17,5 +16,11 @@
     </classes>
   </test> <!-- Test -->
   
+  <test thread-count="5" name="edgebrowser">
+  <parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="crossBrowsing.CrossBrowsingTest"/>
+    </classes>
+  </test> <!-- Test -->
   
 </suite> <!-- Suite -->

@@ -10,18 +10,19 @@ public class AnnotationAttributes {
 	{
 		System.out.println("Test Case banana executed!");
 	}
-	@BeforeTest
-	@Test(priority=4,dependsOnMethods= {"doll","banana"})
+	
+	@Test(priority=4)
 	public void Apple()
 	{
 		System.out.println("Test Case apple executed!");
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1, dependsOnMethods= {"doll","banana"})
 	public void cat()
 	{
 		System.out.println("Test Case cat executed!");
 	}
+	
 	@Test(priority=2)
 	public void doll()
 	{

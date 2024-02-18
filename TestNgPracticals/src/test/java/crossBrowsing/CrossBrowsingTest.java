@@ -3,6 +3,7 @@ package crossBrowsing;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,7 +16,7 @@ public class CrossBrowsingTest {
 	
 	@Parameters("browser")
 	@BeforeClass
-	public void openFirefoxBrowser(String browser)
+	public void openBrowser(String browser)
 	{
 		if(browser.equalsIgnoreCase("firefox"))
 		{
@@ -27,6 +28,12 @@ public class CrossBrowsingTest {
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 		}
+		else if(browser.equalsIgnoreCase("edge"))
+		{
+			driver = new EdgeDriver();
+			driver.manage().window().maximize();
+		}
+			
 	}
 	@Test
 	public void openUrl()

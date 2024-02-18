@@ -21,7 +21,7 @@ public class ListenDemo {
 	}
 	
 	//failed testcase
-	@Test()
+	@Test
 	public void second()
 	{
 		WebDriver driver = new ChromeDriver();
@@ -36,6 +36,7 @@ public class ListenDemo {
 	public void SkipTest() {
 		throw new SkipException("Skipping The Test Method ");
 	}
+	
 	@AfterMethod
 	public void after()
 	{
